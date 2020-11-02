@@ -22,10 +22,10 @@ let possibleChars = [];
     
     do {
         
-   numbsConfirmed = confirm('Would you like number?')
-   lowerCaseConfirmed = confirm('Would you like lowercase')
-   upperCaseConfirmed = confirm('Would you like upper case?')
-   specialCharactersConfirmed = confirm('Would you like special characters?')
+   numbsConfirmed = confirm('Would you like to include numbers?')
+   lowerCaseConfirmed = confirm('Would you like to include lowercase?')
+   upperCaseConfirmed = confirm('Would you like to include upper case?')
+   specialCharactersConfirmed = confirm('Would you like to include special characters?')
 
   if (numbsConfirmed){
       possibleChars.push(numbs);
@@ -47,7 +47,7 @@ let possibleChars = [];
       alert('You Must Select One Option!')
   }
 
- } while (counter === 0)
+ } while (counter === 0)   // over enginered for fun
     
   function generatePassword(passwordLength, possibleCharacters){
     var result = '';
